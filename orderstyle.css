@@ -1,0 +1,15 @@
+.header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-bottom: 10px;
+}
