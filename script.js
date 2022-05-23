@@ -163,14 +163,23 @@ function javascriptCoder(data) {
     const columns2 = document.createElement("div");
     const columnTitle2 = document.createElement("div");
     const headingColumn2 = document.createElement("h2");
+    const confirmBtndiv =document.createElement("div");
+    const confirmBtn = document.createElement("a");
    
 
     columns2.className = "bookshop-columns";
     columnTitle2.className = "column-title";
     headingColumn2.innerHTML = "Shopping Bag";
+    confirmBtn.innerHTML = "Confirm Order";
+    confirmBtn.setAttribute("href", "./Order.html");
+    confirmBtn.className = "button";
+
 
     columnTitle2.appendChild(headingColumn2);
     columns2.appendChild(columnTitle2);
+    confirmBtndiv.appendChild(confirmBtn);
+    columns2.appendChild(confirmBtndiv);
+    
     mainContainer.appendChild(columns2);
     mainContainer.appendChild(overlay);
 

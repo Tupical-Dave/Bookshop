@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="orderstyle.css" />
+    <title>Order page</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Order Confirmation</h1>
+    </div>
+
+    <div class="main-container">
+      <form id="Order-form" action="#">
+        <div class="container">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Write your name"
+            minlength="4"
+          />
+        </div>
+
+        <div class="container">
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            required
+            placeholder="Write your surname"
+            minlength="5"
+          />
+        </div>
+
+        <div class="container">
+          <label for="delivery date">Delivery date:</label>
+          <input type="date" name="date" id="date" required min="2022-05-24" />
+        </div>
+
+        <div class="container">
+          <label for="street">Street:</label>
+          <input
+            type="text"
+            name="street"
+            id="street"
+            required
+            placeholder="XXX Str"
+            minlength="5"
+          />
+        </div>
+
+        <div class="container">
+          <label for="house-number">House Number:</label>
+          <input
+            type="number"
+            name="house-number"
+            id="house-number"
+            required
+            placeholder="Num"
+          />
+        </div>
+
+        <div class="container">
+          <label for="flat-number">Flat Number:</label>
+          <input
+            type="text"
+            name="flat-number"
+            id="flat-number"
+            required
+            placeholder="Num"
+          />
+        </div>
+
+        <div class="container">
+          <label for="payment type">Choose Payment Type:</label>
+          <input type="radio" name="payment" value="card" id="choose-card" />
+          <label for="payment type">Card</label>
+          <input type="radio" name="payment" value="cash" id="choose-cash" />
+          <label for="payment type">Cash</label>
+        </div>
+
+        <div class="container">
+          <label for="gift type">Choose 2 Gifts:</label>
+          <br />
+
+          <input
+            type="checkbox"
+            name="gifts"
+            value="Pack as a gift"
+            id="Pack-as-a-gift"
+          />
+          <label for="payment type">Pack as a gift</label>
+
+          <br />
+
+          <input
+            type="checkbox"
+            name="gifts"
+            value="Add postcard"
+            id="Add-postcard"
+          />
+          <label for="payment type">Add postcard</label>
+
+          <br />
+
+          <input
+            type="checkbox"
+            name="gifts"
+            value="Provide 2% discount to the next time"
+            id="discount"
+          />
+          <label for="payment type">Provide 2% discount to the next time</label>
+
+          <br />
+
+          <input
+            type="checkbox"
+            name="gifts"
+            value="Branded pen or pencil"
+            id="pen-or-pencil"
+          />
+          <label for="payment type">Branded pen or pencil</label>
+        </div>
+
+        <div class="namefield"></div>
+      </form>
+    </div>
+  </body>
+</html>
